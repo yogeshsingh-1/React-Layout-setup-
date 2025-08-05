@@ -14,7 +14,6 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         {/* 404 Route */}
-        
       </Route>
 
       {/* Public Routes */}
@@ -34,8 +33,11 @@ function App() {
       {/* Auth Routes */}
       <Route path="/auth" element={<AuthLayout />}>
         <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
+        <Route path="forgot-password" element={<ForgotPassword />} />
+        <Route path="reset/:token" element={<ResetPassword />} />
       </Route>
-       {/* Fallback */}
+      {/* Fallback */}
       <Route path="*" element={<h1>404 - Page not found</h1>} />
     </Routes>
   );
