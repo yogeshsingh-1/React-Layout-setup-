@@ -10,7 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           {/* Nested Routes */}
-          <Route index element={<Home />} />
+          <Route index element={<Home />} /> 
+           {/* index का मतलब – Default ya Initial Child Route */}
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           {/* 404 Route */}

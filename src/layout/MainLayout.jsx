@@ -7,7 +7,8 @@ const MainLayout = () => {
     <>
       <Navbar />
       
-        <Outlet /> {/* This renders the child route component */}
+        <Outlet /> {/* This renders the child route component
+        <Outlet /> उस जगह होता है जहां nested routes का UI दिखाई देगा। */}
  
       <Footer />
     </>
